@@ -4,7 +4,7 @@ require 'net/http'
 require 'minitest/autorun'
 require 'socket'
 
-class JenkinsSampleTest < MiniTest::Unit::TestCase
+class JenkinsSampleTest < Minitest::Test
   def setup
     uri_params = {
       :host => ENV['TEST_IP_ADDRESS'] || 'localhost',
